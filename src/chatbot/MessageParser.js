@@ -5,6 +5,11 @@ class MessageParser {
 
   parse(message) {
     console.log(message);
+    const lowerMessage = message.toLowerCase();
+
+    if (lowerMessage.includes('hello')) {
+      this.actionProvider.greet();
+    }
   }
 }
 
