@@ -10,6 +10,10 @@ class MessageParser {
     if (lowerMessage.includes('hello')) {
       this.actionProvider.greet();
     }
+
+    if (lowerMessage.includes('javascript') || lowerMessage.includes('js')) {
+      this.actionProvider.handleJavascriptQuiz();
+    }
   }
 }
 

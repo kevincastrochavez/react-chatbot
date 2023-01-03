@@ -9,10 +9,13 @@ class ActionProvider {
     this.addMessageToState(message);
   };
 
-  handleJavascriptQuiz = () => {
-    const message = this.createChatbotMessage('Fantastic! Here is your quiz', {
-      widget: 'javascriptQuiz',
-    });
+  shopVehicle = () => {
+    const message = this.createChatbotMessage(
+      'We assure you there is no place like Carstro to get your next vehicle. What would you like to do?',
+      {
+        widget: 'shopOptions',
+      }
+    );
 
     this.addMessageToState(message);
   };

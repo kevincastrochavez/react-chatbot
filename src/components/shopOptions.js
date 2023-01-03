@@ -1,16 +1,13 @@
 import React from 'react';
 
-import './Options.css';
-
-const Options = (props) => {
+const ShopOptions = (props) => {
   const options = [
     {
-      text: 'Shop a vehicle',
-      handler: props.actionProvider.shopVehicle,
+      text: 'See inventory',
+      handler: () => {},
       id: 1,
     },
-    { text: 'Python', handler: () => {}, id: 2 },
-    { text: 'Golang', handler: () => {}, id: 3 },
+    { text: 'Find a dealer', handler: () => {}, id: 2 },
   ];
 
   const buttonsMarkup = options.map((option) => (
@@ -22,4 +19,4 @@ const Options = (props) => {
   return <div className='options-container'>{buttonsMarkup}</div>;
 };
 
-export default Options;
+export default ShopOptions;
