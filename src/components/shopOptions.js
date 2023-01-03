@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ShopOptions = (props) => {
   const options = [
     {
-      text: 'See inventory',
+      text: <a href='/inventory'>See inventory</a>,
       handler: () => {},
       id: 1,
     },
